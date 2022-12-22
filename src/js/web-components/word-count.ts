@@ -9,10 +9,12 @@ function countWords(node: HTMLElement) {
     .filter((a) => a.trim().length > 0).length
 }
 
-class WordCount extends HTMLParagraphElement {
+export class WordCount extends HTMLElement {
   constructor() {
     super()
+  }
 
+  connectedCallback() {
     const wcParent = this.parentElement
     if (!wcParent) return
 
@@ -32,4 +34,4 @@ class WordCount extends HTMLParagraphElement {
   }
 }
 
-customElements.define("word-count", WordCount, {extends: "p"})
+customElements.define("word-count", WordCount)

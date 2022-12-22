@@ -3,6 +3,7 @@ import {createRoot} from "react-dom/client"
 
 import App from "./app"
 import "./web-components/hello-world"
+import "./web-components/lit"
 import "./web-components/word-count"
 
 const container = document.body.querySelector("#container") as Element

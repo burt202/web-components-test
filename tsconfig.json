@@ -11,7 +11,8 @@
     "noErrorTruncation": true,
     "strict": true,
     "resolveJsonModule": true,
-    "jsx": "react"
+    "jsx": "react",
+    "experimentalDecorators": true
   },
   "include": ["./src/**/*", "./webpack/*"]
 }

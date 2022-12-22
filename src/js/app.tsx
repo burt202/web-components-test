@@ -33,7 +33,7 @@ export default function App() {
       </p>
 
       <word-count />
-      <hello-world />
+      <hello-world foo="xxxxxxx" />
     </article>
   )
 }
